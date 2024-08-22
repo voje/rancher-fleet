@@ -8,6 +8,7 @@ spec:
   # Everything from this repo will be run in this cluster. You trust me right?
   # repo: "https://github.com/rancher/fleet-examples"
   repo: https://github.com/voje/rancher-fleet
+  branch: main
   paths:
   - sites/one
   # - fleet/loki-stack
