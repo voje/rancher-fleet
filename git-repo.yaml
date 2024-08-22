@@ -3,7 +3,7 @@ kind: GitRepo
 metadata:
   name: one
   # This namespace is special and auto-wired to deploy to the local cluster
-  namespace: one
+  namespace: fleet-local
 spec:
   # Everything from this repo will be run in this cluster. You trust me right?
   # repo: "https://github.com/rancher/fleet-examples"
@@ -11,4 +11,4 @@ spec:
   branch: main
   paths:
   - sites/one
-  # - fleet/loki-stack
+  - sites/two
