@@ -1,0 +1,25 @@
+repositories:
+
+- name: grafana
+  url: https://grafana.github.io/helm-charts
+
+releases:
+
+- name: noisy-pod
+  namespace: noisy-pod
+  chart: ../noisy-pod
+
+- name: monitoring-stack
+  namespace: default
+  chart: prometheus-community/kube-prometheus-stack
+  disableValidation: true
+  version: 56.20.1
+
+# name it loki - hostname is templated from helm release name
+- name: loki
+  namespace: default
+  chart: grafana/loki-stack
+  # version: 2.9.12    # works, old grafana GUI
+  version: 2.10.2
+  values:
+    - ./loki-stack-2.10.2.yaml

@@ -1,0 +1,2 @@
+patchesStrategicMerge:
+  - /charts/loki/templates/statefulset.yaml

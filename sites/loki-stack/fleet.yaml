@@ -1,0 +1,10 @@
+# 
+---
+namespace: monitoring-fleet
+helm:
+  releaseName: loki
+  repo: grafana
+  chart: loki-stack
+  version: 2.10.2
+kustomize:
+  dir: overlays/dev

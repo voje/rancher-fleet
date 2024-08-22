@@ -1,0 +1,9 @@
+# Source: loki-stack/charts/loki/templates/statefulset.yaml
+apiVersion: apps/v1
+kind: StatefulSet
+spec:
+  template:
+    spec:
+      containers:
+        - name: loki
+          image: "grafana/loki:2.6.1"

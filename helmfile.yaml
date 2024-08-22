@@ -1,0 +1,14 @@
+repositories:
+
+- name: fleet
+  url: https://rancher.github.io/fleet-helm-charts/
+
+releases:
+
+- name: fleet-crd
+  namespace: cattle-fleet-system
+  chart: fleet/fleet-crd
+
+- name: fleet
+  namespace: cattle-fleet-system
+  chart: fleet/fleet
