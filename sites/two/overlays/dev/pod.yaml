@@ -1,0 +1,4 @@
+spec:
+  containers:
+  - name: toolbox
+    image: busybox:1.36
