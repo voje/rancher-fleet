@@ -1,2 +1,3 @@
-patchesStrategicMerge:
+# patchesStrategicMerge:   # <-- deprecated?
+patches:
 - pod.yaml
