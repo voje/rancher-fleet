@@ -10,5 +10,6 @@ spec:
   repo: https://github.com/voje/rancher-fleet
   branch: main
   paths:
-  - sites/one
-  - sites/two
+  # - sites/one
+  # - sites/two
+  - sites/three

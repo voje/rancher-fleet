@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: toolbox
+  namespace: helm-toolbox
+  labels:
+    app: toolbox
+spec:
+  containers:
+  - name: toolbox
+    image: busybox:1.36
