@@ -18,7 +18,7 @@ helm:
   chart: ./vendor/loki-stack-2.10.2.tgz
 
   # Force recreate resource that can not be updated
-  force: false
+  force: true
 
   # How long for helm to wait for the release to be active. If the value
   # is less that or equal to zero, we will not wait in Helm
