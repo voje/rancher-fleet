@@ -4,7 +4,7 @@
 
 # Promtail is a daemonset, so we need to allow "any" namespace.
 # Set NS inside chart - is this safe?
-namespace: monitoring
+defaultNamespace: monitoring
 
 # Custom helm options
 helm:
