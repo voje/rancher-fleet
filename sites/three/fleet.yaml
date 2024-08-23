@@ -13,9 +13,9 @@ helm:
   # If repo below is set this value if the chart name in the repo
   # chart: "../../vendor/loki-stack"
 
-  # chart: "./toolbox"
+  chart: "./toolbox"
   # Try relative path w/o going up the tree
-  chart: ./vendor/loki-stack-2.10.2.tgz
+  # chart: ./vendor/loki-stack-2.10.2.tgz
 
   # Force recreate resource that can not be updated
   force: true
