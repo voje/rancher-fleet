@@ -4,12 +4,14 @@
 
 # Promtail is a daemonset, so we need to allow "any" namespace.
 # Set NS inside chart - is this safe?
-# namespace: monitoring
+namespace: monitoring
 
 # Custom helm options
 helm:
   # The release name to use. If empty a generated release name will be used
   releaseName: loki
+
+  namespace: monitoring
 
   # The directory of the chart in the repo.  Also any valid go-getter supported
   # URL can be used there is specify where to download the chart from.
