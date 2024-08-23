@@ -13,9 +13,14 @@ helm:
   # If repo below is set this value if the chart name in the repo
   # chart: "../../vendor/loki-stack"
 
+  # This works...
   chart: "./toolbox"
-  # Try relative path w/o going up the tree
+
+  # This doesn't bring up the helm install
   # chart: ./vendor/loki-stack-2.10.2.tgz
+  
+  # Try unarchived
+  chart: ./vendor/loki-stack
 
   # Force recreate resource that can not be updated
   force: true
