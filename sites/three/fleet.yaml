@@ -28,7 +28,7 @@ helm:
   # chart: ./vendor/loki-stack
 
   # Reference internet chart - todo swap with local registry
-  chart: grafana/loki-stack
+  chart: loki-stack
   repo: https://grafana.github.io/helm-charts
   version: 2.10.2
 
