@@ -34,6 +34,11 @@ helm:
   # is less that or equal to zero, we will not wait in Helm
   timeoutSeconds: 0
 
+  values:
+    loki:
+      image:
+        tag: 2.9.3
+
 # Optionally add kustomize
 # kustomize:
 #   dir: overlays/dev
