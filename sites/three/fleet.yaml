@@ -19,7 +19,7 @@ helm:
   # chart: "../../vendor/loki-stack"
 
   # This works...
-  chart: "./toolbox"
+  # chart: "./toolbox"
 
   # This doesn't bring up the helm install
   # chart: ./vendor/loki-stack-2.10.2.tgz
